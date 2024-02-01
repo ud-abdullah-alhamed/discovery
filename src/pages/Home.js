@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'boxicons'
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -63,7 +63,7 @@ function Home() {
   const subProducts = data.result ? data.result.subProduct : [];
 
   return (
-    <div className="app-container">
+    <div className="app-container"    >
       <div className="empty-card-container">
         <div className="card" id="emptyCard">
           <div className="card-title">{productTitle}</div>
@@ -126,7 +126,7 @@ function Home() {
               <i className='bx bxs-chevron-right' style={{ color: '#ffffff' }} ></i>
             </div>
             <div className="center-content">
-              <h3 className="slider-title">Tap to Select</h3>
+              <p className="slider-title">Tap to Select</p>
             </div>
             <div className="swiper-button-prev slider-arrow">
               <i className='bx bxs-chevron-left' style={{ color: '#ffffff' }} ></i>
